@@ -46,7 +46,10 @@ class FlightInterfaceController: WKInterfaceController {
   override func awake(withContext context: Any?) {
     super.awake(withContext: context)
     
-    flight = Flight.allFlights().first
+    // Здесь мы пытаемся преобразовать context как экземпляр Flight. Если это удаётся, мы используем его для задания self.flight, который в свою очередь приводит к выполнению Property observer и настраивает интерфейс.
+    if let flight = context as? Flight {
+      self.flight = flight
+    }
   }
   
 }
