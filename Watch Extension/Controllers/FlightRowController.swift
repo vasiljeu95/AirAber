@@ -37,4 +37,11 @@ class FlightRowController: NSObject {
     }
   }
   
+  // Здесь мы создаём экземпляр UIColor, затем используем его для задания цвета оттенка и цвета соответственно planeImage и separator. Этот метод будет вызываться при закрытии анимации, поэтому смена цвета будет красиво анимирована.
+  func updateForCheckIn() {
+    let color = UIColor(red: 90/255, green: 200/255, blue: 250/255, alpha: 1)
+    planeImage.setTintColor(color)
+    separator.setColor(color)
+  }
+  
 }

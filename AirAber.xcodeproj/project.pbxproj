@@ -23,7 +23,6 @@
 		6BEE5DB0220CD25600FE69D8 /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8FA27F1B724A9900B1E765 /* Flight.swift */; };
 		6BEE5DB2220CD3DF00FE69D8 /* Logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BEE5DB1220CD3DF00FE69D8 /* Logo@2x.png */; };
 		6BEE5DB3220CD3DF00FE69D8 /* Logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BEE5DB1220CD3DF00FE69D8 /* Logo@2x.png */; };
-		6BEE5DB5220DE34200FE69D8 /* FlightInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE5DB4220DE34200FE69D8 /* FlightInterfaceController.swift */; };
 		6BEE5DB6220DE34200FE69D8 /* FlightInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE5DB4220DE34200FE69D8 /* FlightInterfaceController.swift */; };
 		7B8FA23D1B72275A00B1E765 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8FA23C1B72275A00B1E765 /* AppDelegate.swift */; };
 		7B8FA23F1B72275A00B1E765 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8FA23E1B72275A00B1E765 /* ViewController.swift */; };
@@ -377,7 +376,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B8FA2801B724A9900B1E765 /* Flight.swift in Sources */,
-				6BEE5DB5220DE34200FE69D8 /* FlightInterfaceController.swift in Sources */,
 				7B8FA28D1B72893300B1E765 /* UIImageViewExtension.swift in Sources */,
 				7B8FA23F1B72275A00B1E765 /* ViewController.swift in Sources */,
 				7B8FA23D1B72275A00B1E765 /* AppDelegate.swift in Sources */,
