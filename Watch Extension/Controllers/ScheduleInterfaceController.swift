@@ -29,10 +29,11 @@ class ScheduleInterfaceController: WKInterfaceController {
     }
   }
 
-  // Здесь мы получаем из flights соответствующий рейс, используя индекс строки, переданный в этот метод. Затем мы отображаем интерфейс сведений о рейсе, в качестве context передавая flight. Помните, что имя, передаваемое в presentController(withName:context:) — это идентификатор, заданный нами в storyboard в предыдущей части туториала.
+  // Здесь мы получаем соответствующий рейс из flights с индексом rowIndex, создаём массив, содержащий идентификаторы двух контроллеров интерфейса, которые мы хотим отобразить, а затем отобразить их, передав обоим flight в качестве context.
   override func table(_ table: WKInterfaceTable, didSelectRowAt rowIndex: Int) {
     let flight = flights[rowIndex]
-    presentController(withName: "Flight", context: flight)
+    let controllers = ["Flight", "CheckIn"]
+    presentController(withNames: controllers, contexts: [flight, flight])
   }
   
   
