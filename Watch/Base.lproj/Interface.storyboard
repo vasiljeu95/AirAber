@@ -60,7 +60,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="60" y="-36"/>
+            <point key="canvasLocation" x="392" y="-36"/>
         </scene>
         <!--Air Aber-->
         <scene sceneID="tBv-nH-4ZD">
@@ -123,7 +123,44 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="350" y="-36"/>
+            <point key="canvasLocation" x="159" y="-36"/>
+        </scene>
+        <!--CheckIn-->
+        <scene sceneID="3oC-xn-CUe">
+            <objects>
+                <controller identifier="CheckIn" id="oTd-Ks-heg">
+                    <items>
+                        <group width="1" height="1" alignment="center" contentMode="center" layout="vertical" id="1xy-K0-BVR">
+                            <items>
+                                <group height="30" alignment="center" spacing="4" id="JEV-7c-zDE">
+                                    <items>
+                                        <label alignment="left" verticalAlignment="center" text="MEL" id="ZCe-TQ-Rnf">
+                                            <fontDescription key="font" type="system" weight="semibold" pointSize="20"/>
+                                        </label>
+                                        <label alignment="right" verticalAlignment="center" text="SFO" id="9ob-nI-geN">
+                                            <fontDescription key="font" type="system" weight="semibold" pointSize="20"/>
+                                        </label>
+                                        <imageView width="24" height="20" alignment="left" verticalAlignment="center" image="Plane" id="V1X-la-cVj">
+                                            <color key="tintColor" red="0.65129282990000004" green="0.10719832009999999" blue="0.14381325649999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </imageView>
+                                    </items>
+                                </group>
+                                <button alignment="center" verticalAlignment="center" id="MGf-gB-lIs">
+                                    <group key="contentGroup" width="78" height="78" alignment="left" radius="39" id="mUq-jn-DoO">
+                                        <items>
+                                            <label alignment="center" verticalAlignment="center" text="Check In" id="oLA-2A-6bs">
+                                                <fontDescription key="font" type="system" weight="semibold" pointSize="16"/>
+                                            </label>
+                                        </items>
+                                        <color key="backgroundColor" red="0.65129282990000004" green="0.10719832009999999" blue="0.14381325649999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </group>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="623" y="-36"/>
         </scene>
     </scenes>
     <color key="tintColor" red="0.65129282990000004" green="0.10719832009999999" blue="0.14381325649999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>

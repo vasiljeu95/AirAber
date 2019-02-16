@@ -12,20 +12,18 @@ import Foundation
 
 class CheckInInterfaceController: WKInterfaceController {
 
-    override func awake(withContext context: Any?) {
-        super.awake(withContext: context)
-        
-        // Configure interface objects here.
-    }
+  @IBOutlet var backgroundGroup: WKInterfaceGroup!
+  @IBOutlet var originLabel: WKInterfaceLabel!
+  @IBOutlet var destinationLabel: WKInterfaceLabel!
 
-    override func willActivate() {
-        // This method is called when watch view controller is about to be visible to user
-        super.willActivate()
+  // Здесь мы добавили вспомогательное свойство типа Flight, которое включает в себя Property observer. При выполнении наблюдателя он пытается снять обёртку с flight, и если это удаётся, использует flight для настройки двух меток. Всё это уже нам знакомо.
+  var flight: Flight? {
+    didSet {
+      guard let flight = flight else { return }
+      
+      originLabel.setText(flight.origin)
+      destinationLabel.setText(flight.destination)
     }
-
-    override func didDeactivate() {
-        // This method is called when watch view controller is no longer visible
-        super.didDeactivate()
-    }
-
+  }
+  
 }

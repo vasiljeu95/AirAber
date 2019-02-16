@@ -11,6 +11,7 @@
 		6B8566CB2215D02500CB2505 /* Plane@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B8566CA2215D02400CB2505 /* Plane@2x.png */; };
 		6B8566CF2215FDCE00CB2505 /* ScheduleInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8566CE2215FDCE00CB2505 /* ScheduleInterfaceController.swift */; };
 		6B8566D12217381000CB2505 /* FlightRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8566D02217381000CB2505 /* FlightRowController.swift */; };
+		6B8566D422185AD900CB2505 /* CheckInInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8566D322185AD900CB2505 /* CheckInInterfaceController.swift */; };
 		6BEE5D8A220CCD1200FE69D8 /* Flights.json in Resources */ = {isa = PBXBuildFile; fileRef = 7B8FA27C1B724A7400B1E765 /* Flights.json */; };
 		6BEE5D91220CD20B00FE69D8 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BEE5D8F220CD20B00FE69D8 /* Interface.storyboard */; };
 		6BEE5D93220CD20C00FE69D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BEE5D92220CD20C00FE69D8 /* Assets.xcassets */; };
@@ -81,6 +82,7 @@
 		6B8566CA2215D02400CB2505 /* Plane@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Plane@2x.png"; sourceTree = "<group>"; };
 		6B8566CE2215FDCE00CB2505 /* ScheduleInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleInterfaceController.swift; sourceTree = "<group>"; };
 		6B8566D02217381000CB2505 /* FlightRowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightRowController.swift; sourceTree = "<group>"; };
+		6B8566D322185AD900CB2505 /* CheckInInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInInterfaceController.swift; sourceTree = "<group>"; };
 		6BEE5D8D220CD20B00FE69D8 /* Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Watch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BEE5D90220CD20B00FE69D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		6BEE5D92220CD20C00FE69D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -121,6 +123,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B8566D22217501E00CB2505 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6BEE5DB4220DE34200FE69D8 /* FlightInterfaceController.swift */,
+				6B8566CE2215FDCE00CB2505 /* ScheduleInterfaceController.swift */,
+				6B8566D02217381000CB2505 /* FlightRowController.swift */,
+				6B8566D322185AD900CB2505 /* CheckInInterfaceController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		6BEE5D8E220CD20B00FE69D8 /* Watch */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,9 +150,7 @@
 				6BEE5DA0220CD20C00FE69D8 /* ExtensionDelegate.swift */,
 				6BEE5DA2220CD20D00FE69D8 /* Assets.xcassets */,
 				6BEE5DA4220CD20D00FE69D8 /* Info.plist */,
-				6BEE5DB4220DE34200FE69D8 /* FlightInterfaceController.swift */,
-				6B8566CE2215FDCE00CB2505 /* ScheduleInterfaceController.swift */,
-				6B8566D02217381000CB2505 /* FlightRowController.swift */,
+				6B8566D22217501E00CB2505 /* Controllers */,
 			);
 			path = "Watch Extension";
 			sourceTree = "<group>";
@@ -352,6 +363,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B8566D422185AD900CB2505 /* CheckInInterfaceController.swift in Sources */,
 				6BEE5DA1220CD20C00FE69D8 /* ExtensionDelegate.swift in Sources */,
 				6BEE5DB6220DE34200FE69D8 /* FlightInterfaceController.swift in Sources */,
 				6B8566CF2215FDCE00CB2505 /* ScheduleInterfaceController.swift in Sources */,
